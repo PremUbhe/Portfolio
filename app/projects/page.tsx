@@ -14,9 +14,9 @@ const projects = () => {
               A Bit About Myself
             </h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-              I'm a full-stack developer with over 5 years of experience
+              I am a full-stack developer with over 5 years of experience
               building web applications. I have a strong background in
-              JavaScript, React, and Node.js, and I'm always eager to learn new
+              JavaScript, React, and Node.js, and I am always eager to learn new
               technologies and techniques.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
