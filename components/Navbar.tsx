@@ -11,7 +11,7 @@ const links = [
   },
   {
     name: "About Me",
-    path: "/projects",
+    path: "/about",
   },
   {
     name: "projects",
@@ -23,7 +23,7 @@ const links = [
   },
   {
     name: "contact me",
-    path: "/resume",
+    path: "/contact",
   },
 ];
 
@@ -38,8 +38,8 @@ const Navbar = () => {
             href={link.path}
             key={index}
             className={`${
-              link.path === pathname && "text-orange-500"  // condition for checking active class
-            } capitalize font-medium hover:text-orange-500`}
+              link.path === pathname && "text-primary"  // condition for checking active class
+            } capitalize text-xs hover:text-primary`}
           >
             {link.name}
           </Link>

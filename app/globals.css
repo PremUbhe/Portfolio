@@ -18,15 +18,13 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --background-start-rgb: #111022;
+  --background-end-rgb: #000000;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: var(--background-start-rgb);
 }
 
 @layer utilities {
@@ -38,4 +36,17 @@ body {
 /* css */
 .container {
   margin: 0px auto;
+}
+
+.text-heading {
+  background: linear-gradient(#ffffff, #9198e5);
+  background-clip: text;
+  color: transparent;
+}
+
+.blur-box {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #ffffff0d;
+  backdrop-filter: blur(10px);
 }

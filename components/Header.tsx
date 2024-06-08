@@ -5,10 +5,10 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="navbar py-4 border-b-2">
+    <header className="navbar py-4 bg-trans backdrop-blur-sm">
       <div className="container flex justify-between items-center">
         <div className="nav-logo">
-          <h1 className="text-2xl">Prem Ubhe <span className="text-orange-500">.</span></h1>
+          <h1 className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-slate-50 to-violet-500">Prem Ubhe <span className="text-primary">.</span></h1>
         </div>
 
         {/* desktop navbar */}

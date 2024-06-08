@@ -10,7 +10,7 @@ const projects = () => {
             <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
               About Me
             </div>
-            <h2 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
+            <h2 className="text-heading lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
               A Bit About Myself
             </h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed dark:text-gray-400">
@@ -29,7 +29,7 @@ const projects = () => {
               </Link>
               <Link
                 href="#"
-                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:text-primary dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                 prefetch={false}
               >
                 Contact Me
@@ -37,17 +37,17 @@ const projects = () => {
             </div>
           </div>
           <div className="grid gap-6">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-xl bg-white p-4 shadow-sm dark:bg-gray-950">
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
+              <div className="rounded-xl px-4 py-2 shadow-sm blur-box hover:border-white cursor-pointer">
                 <div className="flex items-center justify-between">
-                  <div className="text-xl font-bold">JavaScript</div>
+                  <div className="text-xl font-normal">JavaScript</div>
                   <div className="text-gray-500 dark:text-gray-400">90%</div>
                 </div>
-                <div className="mt-2 h-2 w-full rounded-full bg-gray-200 dark:bg-gray-800">
-                  <div className="h-2 w-[90%] rounded-full bg-gray-900 dark:bg-gray-50" />
+                <div className="mt-4 h-1 w-full rounded-full bg-gray-200 dark:bg-gray-800">
+                  <div className="h-1 w-[90%] rounded-full bg-gray-900 dark:bg-violet-500" />
                 </div>
               </div>
-              <div className="rounded-xl bg-white p-4 shadow-sm dark:bg-gray-950">
+              <div className="rounded-xl bg-white px-4 py-2 shadow-sm dark:bg-gray-950">
                 <div className="flex items-center justify-between">
                   <div className="text-xl font-bold">React</div>
                   <div className="text-gray-500 dark:text-gray-400">85%</div>
