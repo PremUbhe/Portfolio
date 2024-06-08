@@ -1,16 +1,25 @@
 import React from "react";
-import Link from "next/link";
+
+// components
+import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="container py-5 border-b-2">
-      <div className="logo">
-        <h1>Header</h1>
-      </div>
-      <div className="flex">
-        <Link href="/">
-          <h1>Home</h1>
-        </Link>
+    <header className="navbar py-4 border-b-2">
+      <div className="container flex justify-between items-center">
+        <div className="nav-logo">
+          <h1 className="text-2xl">Prem Ubhe <span className="text-orange-500">.</span></h1>
+        </div>
+
+        {/* desktop navbar */}
+        <div className="hidden lg:block">
+          <Navbar />
+        </div>
+
+        {/* mobile navbar */}
+        <div className="lg:hidden">
+            <h1>mobile</h1>
+        </div>
       </div>
     </header>
   );
